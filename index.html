@@ -5,28 +5,32 @@
     <meta charset="UTF-8">
     <title>Menu de la Saint-Sylvestre</title>
     <style>
+        /* Styles généraux (pour les écrans Desktop) */
         body {
             background: url('background.webp') no-repeat center center fixed;
             background-size: cover;
             color: white;
             text-align: center;
             font-family: 'Arial', sans-serif;
+            margin: 0;
         }
 
         .menu-container {
             background: rgba(0, 0, 0, 0.735);
-            padding: 20px;
-            margin: 50px;
+            padding: 30px;
+            margin: 50px auto;
             border-radius: 10px;
+            max-width: 800px;
         }
 
         h1 {
-            margin: 50px;
+            margin: 50px 0;
+            font-size: 36px;
         }
 
-        h2,
         h3 {
             margin-top: 20px;
+            font-size: 22px;
         }
 
         hr {
@@ -34,7 +38,33 @@
             height: 2px;
             background: linear-gradient(to right, transparent, gold, transparent);
             margin: 50px auto;
-            width: 50%;
+            width: 40%;
+        }
+
+        /* Media Query pour les écrans mobiles */
+        @media (max-width: 1000px) {
+
+            .menu-container {
+                max-width: 100%;
+                margin: 20px;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            hr {
+                width: 70%;
+            }
         }
     </style>
 </head>
